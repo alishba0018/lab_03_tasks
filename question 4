@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    float fuel_average, fuel_consumed, total_cost;
+    int distance = 1207;
+    int forward_fuel_price = 118;
+    int backward_fuel_price = 123;
+    // asking for input
+        printf("Enter the car fuel average (positive number only): ");
+        scanf("%f", &fuel_average);
+        if(fuel_average <= 0) {
+           printf("Error = fuel average must be positive. \n ");
+           return 0;
+        }   
+    //calculate total_fuel_cost
+    fuel_consumed=(distance*2)/fuel_average;
+    total_cost = (distance/fuel_average * forward_fuel_price) + (distance/fuel_average * backward_fuel_price);
+    printf("\ntotal fuel consumed for the trip is %f\n" , fuel_consumed);
+    printf("total cost for the trip is %f\n" , total_cost);
+     return 0;
+ }
