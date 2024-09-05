@@ -1,0 +1,3 @@
+the wrong value is displayed in the output due to the size limit of the datatype int in c language.
+the size of int is 4 bytes at max, which can store 232 distinct numbers from -2147483648 to 2147483647.
+ here the value in question is out of range, causing integer overflow that is why we are being shown a negative random number in the output.
